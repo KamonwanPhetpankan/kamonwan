@@ -18,5 +18,8 @@ from myapp import views as appviews
 
 urlpatterns = [
     path('', appviews.index),
+    path('index', appviews.index),
+    path('events', appviews.events),
+    path('addevents', appviews.addevents),
     path('admin', admin.site.urls),
 ]
